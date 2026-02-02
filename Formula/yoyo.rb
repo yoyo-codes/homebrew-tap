@@ -10,16 +10,16 @@ class Yoyo < Formula
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/yoyo-codes/yoyo/releases/download/v0.1.0/yoyo_0.1.0_darwin_amd64.tar.gz"
-      sha256 "43275ef84899b06e4a2aa5c2d44d4253c91f5f21bee41853d814b607ff433d69"
+      url "https://github.com/yoyo-codes/homebrew-tap/releases/download/v0.1.0/yoyo_0.1.0_darwin_amd64.tar.gz"
+      sha256 "2f1eff4e64c38ac17e065735b322003cf1f73843385daf150f5e0f3bbd3a6920"
 
       def install
         bin.install "yoyo"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/yoyo-codes/yoyo/releases/download/v0.1.0/yoyo_0.1.0_darwin_arm64.tar.gz"
-      sha256 "936cd437c035b94d9d7523fcced79347454d7b566169b5d97c725ee9e3c9a247"
+      url "https://github.com/yoyo-codes/homebrew-tap/releases/download/v0.1.0/yoyo_0.1.0_darwin_arm64.tar.gz"
+      sha256 "989b4bb660844d7c9b4e7dd1fde884965bd71e142973033548338382b4da254a"
 
       def install
         bin.install "yoyo"
@@ -29,15 +29,15 @@ class Yoyo < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/yoyo-codes/yoyo/releases/download/v0.1.0/yoyo_0.1.0_linux_amd64.tar.gz"
-      sha256 "3911f7dd791aaf67820194037a8f7ddd05494ec86d43bf5ed70a96cd1096ce58"
+      url "https://github.com/yoyo-codes/homebrew-tap/releases/download/v0.1.0/yoyo_0.1.0_linux_amd64.tar.gz"
+      sha256 "1c8046cab69452b21f7a29e6b11c0f258db9fb5a2476c08417dacd9a00fe8358"
       def install
         bin.install "yoyo"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/yoyo-codes/yoyo/releases/download/v0.1.0/yoyo_0.1.0_linux_arm64.tar.gz"
-      sha256 "8f3de84769bf8c516a2a09c6638c387b35f9eabe97122b84c345babf464ad1e8"
+      url "https://github.com/yoyo-codes/homebrew-tap/releases/download/v0.1.0/yoyo_0.1.0_linux_arm64.tar.gz"
+      sha256 "d4cf243509214de11560c7553e3b8e62c30ed8b5367d02ae19e7791bc6e21661"
       def install
         bin.install "yoyo"
       end

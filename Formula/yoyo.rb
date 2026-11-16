@@ -5,23 +5,23 @@
 class Yoyo < Formula
   desc "CLI for deploying to Yoyo"
   homepage "https://yoyo.codes"
-  version "0.1.0"
+  version "0.2.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/yoyo-codes/homebrew-tap/releases/download/v0.1.0/yoyo_0.1.0_darwin_amd64.tar.gz"
-      sha256 "2f1eff4e64c38ac17e065735b322003cf1f73843385daf150f5e0f3bbd3a6920"
+      url "https://github.com/yoyo-codes/cli/releases/download/v0.2.0/yoyo_0.2.0_darwin_amd64.tar.gz"
+      sha256 "2d6d7dd560ec9d945cbbcdea6235f11fd5165b8492eb7abc46afe71252fa3d5c"
 
-      def install
+      define_method(:install) do
         bin.install "yoyo"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/yoyo-codes/homebrew-tap/releases/download/v0.1.0/yoyo_0.1.0_darwin_arm64.tar.gz"
-      sha256 "989b4bb660844d7c9b4e7dd1fde884965bd71e142973033548338382b4da254a"
+      url "https://github.com/yoyo-codes/cli/releases/download/v0.2.0/yoyo_0.2.0_darwin_arm64.tar.gz"
+      sha256 "e266977e6500b7fb325f05ebe10d3f1c0877268e720b8d127dcbd87eb9f42faf"
 
-      def install
+      define_method(:install) do
         bin.install "yoyo"
       end
     end
@@ -29,16 +29,16 @@ class Yoyo < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/yoyo-codes/homebrew-tap/releases/download/v0.1.0/yoyo_0.1.0_linux_amd64.tar.gz"
-      sha256 "1c8046cab69452b21f7a29e6b11c0f258db9fb5a2476c08417dacd9a00fe8358"
-      def install
+      url "https://github.com/yoyo-codes/cli/releases/download/v0.2.0/yoyo_0.2.0_linux_amd64.tar.gz"
+      sha256 "7dcfc8f770bd4e0f446812c604a5a481e43d00cb336450af70ba008d1eec6759"
+      define_method(:install) do
         bin.install "yoyo"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/yoyo-codes/homebrew-tap/releases/download/v0.1.0/yoyo_0.1.0_linux_arm64.tar.gz"
-      sha256 "d4cf243509214de11560c7553e3b8e62c30ed8b5367d02ae19e7791bc6e21661"
-      def install
+      url "https://github.com/yoyo-codes/cli/releases/download/v0.2.0/yoyo_0.2.0_linux_arm64.tar.gz"
+      sha256 "259749863b92dcb02fddc40e466974df20224255554a0eba8d3c16e4f428f3db"
+      define_method(:install) do
         bin.install "yoyo"
       end
     end
